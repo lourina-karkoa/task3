@@ -1,0 +1,365 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Inconsolata", monospace;
+}
+.navbar{
+    width: 100vw;
+    height: 50px;
+    background-color: black;
+    color: white;
+    box-shadow: 0px 2px 5px 2px rgb(8, 8, 8);
+    position: fixed;
+    z-index: 1;
+}
+.navbar .ol{
+    list-style-type: none;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top:1px solid rgb(131, 130, 127);
+    transition: 1s;
+}
+.navbar .ol li{
+    transition: 1s;
+    width: 60px;
+    height: 20px;
+}
+.navbar .ol li:hover{
+    text-align: center;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+.hero{
+    width: 100%;
+    height: calc(100vh - 50px);
+    background-image:url(../img/coffeehouse.jpg);
+    background-size:cover;
+    background-position: center center;
+    margin: 0px;
+    position: relative;
+
+}
+.hero .hero-father{
+    width:100px ;
+    height:100px ;
+    margin: 0 auto;
+    padding:150px 150px 0 0;
+    font-size: 90px;
+    color: white;
+    font-family: "Roboto Mono", monospace;
+}
+.lk-hero-add{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    position: absolute;
+    bottom: 10px;
+}
+.hero .hero-right{
+    width: 180px;
+    height: 20px;
+    margin-left: 10px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: "Roboto Mono", monospace;
+    transition: 1s;
+}
+.hero .hero-right:hover{
+    text-align: center;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+.hero .hero-left{
+    width: 150px;
+    height: 20px;
+    margin-top: -15px;
+    margin-right: 10px;
+    color: white;
+    font-family: "Roboto Mono", monospace;
+    font-weight:10;
+    text-align: center;
+}
+.hero .hero-left:hover{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+.cafe{
+    width:40% ;
+    height: 450px;
+    margin: 10px auto; 
+    font-family: "Inconsolata", monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.style-h1{
+    background-color: black;
+    color: white;
+    width: 210px;
+    margin: 20px auto;
+    padding: 5px;
+    text-align:center ;
+    font-family: "Inconsolata", monospace;
+    font-weight:20 ; 
+    font-size: 20px;
+    transition: 1s;
+}
+.style-h1:hover{
+    text-align: center;
+    background-color: rgb(240, 191, 191);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+.cafe .italic{
+    background-color: rgb(193, 193, 204);
+    border-left:3px solid gray ;
+    height: 100px;
+    font-family:"Inconsolata", monospace;
+    font-style: italic;
+    
+}
+.style-h2{
+    background-color: black;
+    color: white;
+    width: 110px;
+    margin: 30px auto;
+     margin-top: 60px; 
+    padding: 5px;
+    text-align:center ;
+    font-family: "Inconsolata", monospace;
+    font-weight: lighter;
+    transition: 1s;
+  
+}
+.style-h2:hover{
+    text-align: center;
+    background-color:rgb(193, 193, 204) ;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+.cafe .style-p{
+    padding: 8px;
+    margin-bottom:10px ;
+    font-style: normal;
+}
+.cafe-full{
+    width:100% ;
+    height: 368px;
+
+}
+.cafe-res{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; 
+
+}
+.restourant{
+    width: 40%;
+    height: 300px; 
+    background-image: url(../img/coffeeshop.jpg);
+    background-repeat:no-repeat ;
+    background-size:cover ;
+}
+.cafe-full .contact{
+    width: 40%;
+    height: 68px;
+    margin: 20px auto;
+}
+.contact p{
+    margin: 20px 0px;
+}
+
+.container{
+    width:100% ;
+    height: 530;
+    margin: 10px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.box1{
+    width: 40%;
+    height: 30px;
+    margin: 20px auto 0px auto;
+    border: 2px solid rgb(179, 173, 173);
+    display: flex;
+     justify-content: space-evenly;
+     align-items: center; 
+     background-color: white;
+     color: black;
+  
+} 
+
+.select2 {
+    
+    width: 245px;
+    height: 20px;
+    margin: 5px auto;
+    text-align: center; 
+    transition: 1s;
+
+}
+.select1{
+    
+    width:245px;
+    height: 20px;
+    margin: 5px auto;
+    text-align: center; 
+    transition: 1s;
+}
+.select2:hover {
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+}
+.select1:hover{
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+}
+
+.box2{
+    border-bottom: 2px solid  rgb(179, 173, 173);
+    border-left: 2px solid  rgb(179, 173, 173) ;
+    border-right:2px solid  rgb(179, 173, 173); 
+    width: 40%;
+    height: 500px;
+   
+} 
+.title{
+    font-weight:bold;
+    margin:30px 20px 10px 10px;
+}
+.descrip{
+    color: rgb(124, 120, 120);
+    margin: 5px 10px 30px 10px;
+}
+.cup-caffe{
+    margin-left: 0px !important;
+    width: 40%;
+    height: 250px;
+    margin-left:30px ;
+    background-image: url(../img/coffeehouse2.jpg);
+    background-repeat:no-repeat ;
+    background-size:cover ;
+}
+.her-street{
+    width: 100%;
+    height: 320px;
+    /* margin: 15px 30px 5px 20px;  */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+   
+
+}
+.her-street h4{
+    width: 500px;
+    padding: 0px 0px 20px 0px;
+    margin-left: -30px;
+}
+.cafe-res{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.street{
+    
+    width: 40%;
+    height: 280px;
+    background-image: url(../img/map.jpg);
+    background-repeat:no-repeat ;
+    background-size:cover ;
+
+}
+.par{
+    width: 40%;
+    height: 180px;
+    margin: 0px auto;
+}
+.par p{
+    margin-bottom:20px ;
+    margin-top: 20px;
+}
+.p-style{
+    margin-bottom: 0px;
+}
+#fyi{
+    background-color: black;
+    color: white;
+}
+.form{
+    width: 40%;
+    height: 300px;
+    display: flex ;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: center ;
+}
+.form .style-form {
+    width: 100%;
+    height: 40px;
+    margin: 10px;
+    border: 2p solid rgb(160, 159, 159);
+    transition: 1s;
+}
+.form .style-form:focus{
+    background-color:rgb(178, 178, 201) ;
+    color:rgb(31, 8, 134) ;
+    border: 2px solid rgb(193, 193, 204);
+    border-radius: 10px;
+
+}
+.form button{
+    width: 30%;
+    height: 40px;
+     margin-right: 380px ; 
+    background-color: black;
+    color: white;
+    text-align: start;
+    transition: 1s;
+    text-align: center;
+    cursor: pointer;
+    
+}
+.form button:hover{
+    text-align: center;
+    background-color: rgb(240, 191, 191);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+.end{
+    width: 100%;
+    height: 150px;
+    margin-top: 475px;
+    background-color: rgb(226, 224, 224);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.end a{
+    color: black;
+}
+
+
+
